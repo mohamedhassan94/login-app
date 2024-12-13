@@ -129,7 +129,7 @@ function handleSignup(inputs, form, errors, button) {
   var errorSpans = form.querySelectorAll(".text-danger");
   errorSpans.forEach((span) => (span.textContent = ""));
   button.disabled = true;
-  window.location.replace("home.html");
+  window.location.replace("index.html");
 }
 
 function handleSignupSubmit(event, errors, button) {
