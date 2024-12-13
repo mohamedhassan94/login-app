@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div id="auth-card" class="m-auto mt-5 p-3">
+      <h1 class="my-3 fw-normal text-center">Smart Sign Up System</h1>
+      <form class="px-4" id="signupForm">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control bg-transparent"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <span class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control bg-transparent"
+            id="userEmail"
+            name="user_email"
+            placeholder="Enter your email"
+          />
+          <span class="text-danger"></span>
+        </div>
+        <div class="mb-4">
+          <input
+            type="password"
+            class="form-control bg-transparent"
+            id="userPassword"
+            name="user_password"
+            placeholder="Enter your password"
+          />
+          <span class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-outline-info mb-3 w-100" id="signupButton">
+          Sign Up
+        </button>
+        <p class="text-center text-white">
+          Don’t have an account? <a href="./index.html" class="text-white">Sign In</a>
+        </p>
+      </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
