@@ -21,7 +21,7 @@ function displayWelcomeMessage() {
     welcomeMessage.textContent = `Welcome, ${user.name}!`;
   } else {
     alert("You are not logged in. Redirecting to login page.");
-    window.location.href = "/";
+    window.location.href = "/login-app/";
   }
 }
 
@@ -34,10 +34,10 @@ function handleSignOut(e) {
     users[userIndex].isLogin = false;
     saveUsers(users);
     alert("You have been signed out successfully.");
-    window.location.href = "/";
+    window.location.href = "/login-app/";
   } else {
     alert("No user is currently logged in.");
-    window.location.href = "/";
+    window.location.href = "/login-app/";
   }
 }
 

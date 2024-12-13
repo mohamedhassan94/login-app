@@ -129,7 +129,7 @@ function handleSignup(inputs, form, errors, button) {
   var errorSpans = form.querySelectorAll(".text-danger");
   errorSpans.forEach((span) => (span.textContent = ""));
   button.disabled = true;
-  window.location.href = "/";
+  window.location.href = "/login-app/";
 }
 
 function handleSignupSubmit(event, errors, button) {
@@ -181,7 +181,7 @@ function handleLogin(inputs, form, errors, button) {
   errorSpans.forEach((span) => (span.textContent = ""));
   button.disabled = true;
 
-  window.location.href = "/home.html";
+  window.location.href = "/login-app/home.html";
 }
 
 function handleLoginSubmit(event, errors, button) {
